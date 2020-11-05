@@ -6,10 +6,13 @@ def find_even_values(array)
   while count < array.length do
     inner_count = 0 
     while inner_count < array[count].length do
-      array[count][inner_count].even?
+      
+      if array[count][inner_count].even?
       puts array[count][inner_count]
+      end
+      
       inner_count += 1 
       end
-    end  
     count += 1
+end
 end
